@@ -1,4 +1,5 @@
-body {
+body,
+button {
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
@@ -26,12 +27,38 @@ p {
   display: block;
 }
 
-.navbar a {
+.navbar a,
+button {
   font-size: 1.1rem;
   font-weight: 600;
   text-decoration: none;
   margin-right: 40px;
   color: #82aa77;
+}
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 25px; /* Add rounded edges */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, color 0.3s;
+}
+
+/* Default button color */
+button {
+  background-color: #689582;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Hover effect */
+button:hover {
+  background-color: #5b7e6f;
 }
 
 .navbar a:hover {
